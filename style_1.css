@@ -32,8 +32,81 @@
   margin-right: 42px;
 }
 
+.gamburger {
+  padding-top: 3px;
+}
+
 .left_mini {
   padding-left: 20px;
+}
+
+.left_menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mega-box {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #6F6E6E;
+  position: absolute;
+  top: 45px;
+  left: -40px;
+  padding: 20px;
+  display: none;
+  z-index: 1;
+}
+
+.mega-box::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: -6px;
+  left: 69px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-left: 1px solid #6F6E6E;
+  border-top: 1px solid #6F6E6E;
+}
+
+.main_heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.mini-heading {
+  width: 235px;
+  padding: 12px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  border-bottom: 1px solid #6F6E6E;
+}
+
+.mega-link {
+  display: block;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.mega-link:hover {
+  color: #F16D7F;
+}
+
+.gamburger:hover .mega-box {
+  display: block;
 }
 
 .for_image_2 {
@@ -100,9 +173,10 @@
 
 .categoria__text {
   position: absolute;
-  left: 100px;
-  top: 100px;
+  left: 30%;
+  top: 45%;
   text-align: center;
+  text-decoration: none;
 }
 
 .categoria {
@@ -240,8 +314,6 @@
   border: none;
   padding-left: 20px;
   border-radius: 50px 0 0 50px;
-  display: block;
-  outline: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -251,21 +323,16 @@
 
 .subscribe__input {
   padding-top: 32px;
-}
-
-.bold_text {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .button {
   width: 100px;
   height: 49px;
   background: #F16D7F;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 0 50px 50px 0;
   margin-left: 0;
   font-weight: 400;
@@ -273,6 +340,13 @@
   line-height: 17px;
   text-align: center;
   color: #FFFFFF;
+  display: block;
+}
+
+.button:hover {
+  background: #FFFFFF;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
 }
 
 .for_image_5 {
