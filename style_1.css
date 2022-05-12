@@ -827,7 +827,7 @@ a {
 }
 
 .cat-filter .filter_flex .filter-sign:hover {
-  color: #EF5B70;
+  color: #F16D7F;
 }
 
 .cat-filter .select_box {
@@ -862,7 +862,7 @@ a {
 }
 
 .cat-filter .filter-link_box .filter-link:hover {
-  color: #EF5B70;
+  color: #F16D7F;
 }
 
 .cat-filter .filter-box {
@@ -880,7 +880,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #EF5B70;
+  color: #F16D7F;
   width: 235px;
   padding: 10px;
   border-bottom: 1px solid #EBEBEB;
@@ -931,7 +931,7 @@ ul.pagination li a {
 
 ul.pagination li a.active {
   background-color: #ddd;
-  color: #EF5B70;
+  color: #F16D7F;
 }
 
 ul.pagination li a:hover:not(.active) {

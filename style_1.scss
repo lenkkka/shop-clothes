@@ -9,6 +9,8 @@
     }
 }
 
+@import "_vars";
+
 .for_image {
     background-image: url(images/1_fon.png);
 }
@@ -136,7 +138,7 @@
 }
 
 .fashion_text {
-    color: #F16D7F;
+    color: $pink_color;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
@@ -742,7 +744,7 @@ a {
             }
 
             &:hover {
-                color: #EF5B70;
+                color: $pink_color;
             }
         }
 
@@ -780,7 +782,7 @@ a {
         }
 
         .filter-link:hover {
-            color: #EF5B70;
+            color: $pink_color;
 
         }
     }
@@ -800,7 +802,7 @@ a {
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
-        color: #EF5B70;
+        color: $pink_color;
         width: 235px;
         padding: 10px;
         border-bottom: 1px solid #EBEBEB;
@@ -855,7 +857,7 @@ ul.pagination li a {
 
 ul.pagination li a.active {
     background-color: #ddd;
-    color: #EF5B70;
+    color: $pink_color;
 }
 
 ul.pagination li a:hover:not(.active) {
