@@ -7,10 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InternetS</title>
     <link rel="stylesheet" href="style_1.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9776d5b505.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -69,18 +81,56 @@
             </nav>
         </section>
     </div>
-    <div class="pro-card">
-        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-left"></i></a>
-        <div class="product_card container-main"><img src="images/product_woman.png" alt="Person"></div>
-        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-right"></i></a>
+    <div id="Carousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel1" data-slide-to="1"></li>
+            <li data-target="#Carousel1" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="product_card container"><img src="images/product_woman.png" alt="Flower0"></div>
+            </div>
+
+            <div class="item ">
+                <div class="product_card container"><img src="images/item2.png" alt="Flower1"></div>
+            </div>
+
+            <div class="item">
+                <div class="product_card container"><img src="images/item4.png" alt="Flower2"></div>
+
+            </div>
+        </div>
+        <a class="left carousel-control" href="#Carousel1" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#Carousel1" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
     </div>
+    <script>
+        $(document).ready(function () {
+            $("#Carousel2").carousel({ interval: 3500 });
+        });
+    </script>
+    <!-- <div class="pro-card">
+        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-left"></i></a>
+        <div class="product_card container"><img src="images/product_woman.png" alt="Person"></div>
+        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-right"></i></a>
+    </div> -->
     <div class="product_box">
         <div class="product_about container-main">
             <p class="product_heading">WOMEN COLLECTION</p>
             <p class='pink_line'></p><br>
             <p class="product_inf inf_main">MOSCHINO CHEAP AND CHIC</p>
-            <p class="product_inf">Compellingly actualize fully researched processes before proactive outsourcing.<br>
-                Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
+            <p class="product_inf">Compellingly actualize fully researched processes before proactive
+                outsourcing.<br>
+                Progressively syndicate collaborative architectures before cutting-edge services. Completely
+                visualize
                 parallel core competencies rather than exceptional portals.</p>
             <p class="price pink product_txt">$561</p>
             <div class='gray_line'></div><br>
@@ -119,7 +169,8 @@
             <div class="itemm">
                 <a href="#"><img class="item_img" src="images/item4.png" alt="picture 4">
                     <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of
                         cool
                         Kym Ellery teams
                         up with Moda Operandi.</p>
@@ -137,7 +188,8 @@
             <div class="itemm">
                 <a href="#"><img class="item_img" src="images/item3.png" alt="picture5">
                     <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of
                         cool
                         Kym Ellery teams
                         up with Moda Operandi.</p>
@@ -155,7 +207,8 @@
             <div class="itemm">
                 <a href="#"><img class="item_img" src="images/item6.png" alt="picture 6">
                     <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of
                         cool
                         Kym Ellery teams
                         up with Moda Operandi.</p>
@@ -176,7 +229,8 @@
         <div class="form container-main">
             <figure class="subscribe_part part1">
                 <img class="subscribe__img" src="images/krug_woman.png" alt="face">
-                <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+                <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
+                        pulvinar purus
                         condimentum</i>“</p>
             </figure>
             <form class="subscribe_part part2">
