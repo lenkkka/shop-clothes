@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.items .i_button {
+.i_button {
   display: inline-block;
   text-align: center;
   justify-content: center;
@@ -17,7 +17,7 @@
   color: #FFFFFF;
 }
 
-.items .i_button:hover {
+.i_button:hover {
   background: #FFFFFF;
   color: #F16D7F;
   border: 1px solid #F16D7F;
@@ -94,7 +94,7 @@
   pointer-events: none;
 }
 
-.add-box .add {
+.add {
   display: flex;
   align-items: center;
   padding: 8px;
@@ -102,11 +102,11 @@
   pointer-events: all;
 }
 
-.add-box .add:hover {
+.add:hover {
   box-shadow: 0 0 10px #fff;
 }
 
-.add-box .add_txt {
+.add_txt {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
