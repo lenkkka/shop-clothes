@@ -1,0 +1,124 @@
+// Подвал сайта
+.for_image_4 {
+    background-image: url(images/footer_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .subscribe__img {
+        padding-bottom: 40px;
+    }
+
+
+    .subscribe_part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe_text {
+        text-align: center;
+    }
+
+    .subscribe__text {
+        padding-top: 15px;
+    }
+
+    .part1 {
+        width: 300px;
+        text-align: center;
+    }
+
+    .part2 {
+        padding-right: 100px;
+    }
+
+    .subscribe__input {
+        display: flex;
+    }
+
+    .email {
+        width: 230px;
+        height: 49px;
+        background: #E1E1E1;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 50px 0 0 50px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #222224;
+        opacity: 0.67;
+
+    }
+
+    .subscribe__input {
+        padding-top: 32px;
+        display: flex;
+    }
+
+    .button {
+        width: 100px;
+        height: 49px;
+        background: #F16D7F;
+        border: 1px solid transparent;
+        border-radius: 0 50px 50px 0;
+        margin-left: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        display: block;
+    }
+
+    .button:hover {
+        background: #FFFFFF;
+        color: #F16D7F;
+        border: 1px solid #F16D7F;
+    }
+}
+
+.for_image_5 {
+    background-image: url(images/footer_finish.png);
+}
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        padding-top: 8px;
+    }
+}
+
+// icons
+.icon {
+    display: inline-block;
+    width: 22px;
+    padding: 8px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.icon:hover {
+    color: #FFFFFF;
+    background-color: #F16D7F;
+}

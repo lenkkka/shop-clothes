@@ -14,8 +14,8 @@
 </head>
 
 <body>
-
     <header class="for_image">
+        <!-- Меню -->
         <nav class="menu container-main">
             <div class="right_menu">
                 <a href="index.html"><img src="images/logo.svg" alt="Logo" class="logo"></a>;
@@ -57,6 +57,7 @@
             </div>
         </nav>
     </header>
+    <!-- Указатель страницы -->
     <div class="product">
         <section class="pro-top container-main">
             <h2 class="pro-heading"><b>NEW ARRIVALS</b></h2>
@@ -69,11 +70,46 @@
             </nav>
         </section>
     </div>
-    <div class="pro-card">
-        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-left"></i></a>
+    <!-- Заготовка слайдер -->
+    <div class="all pro-card">
+        <!-- <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-left"></i></a>
         <div class="product_card container-main"><img src="images/product_woman.png" alt="Person"></div>
-        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-right"></i></a> -->
+        <input checked type="radio" name="respond" id="desktop">
+        <article id="slider">
+            <input checked type="radio" name="slider" id="switch1">
+            <input type="radio" name="slider" id="switch2">
+            <input type="radio" name="slider" id="switch3">
+            <input type="radio" name="slider" id="switch4">
+            <input type="radio" name="slider" id="switch5">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="image">
+                        <article><img class="photo-slider" src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+            </div>
+            <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+            </div>
+        </article>
     </div>
+    <!-- Описание товара -->
     <div class="product_box">
         <div class="product_about container-main">
             <p class="product_heading">WOMEN COLLECTION</p>
@@ -113,6 +149,7 @@
             </div>
         </div>
     </div>
+    <!-- Карточки -->
     <div class="pro-items">
         <div class="items container-main">
             <!-- item 1 -->
@@ -171,7 +208,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Подвал сайта -->
     <div class="for_image_4">
         <div class="form container-main">
             <figure class="subscribe_part part1">
@@ -191,7 +228,7 @@
             </form>
         </div>
     </div>
-
+    <!-- Иконки -->
     <div class="for_image_5">
         <footer class="footer container-main">
             <div class="footer__text">© 2021 Brand All Rights Reserved</div>

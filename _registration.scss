@@ -1,0 +1,98 @@
+// Анкета
+.anketa {
+    display: flex;
+    padding-top: 64px;
+    justify-content: space-between;
+
+    &_part1 {
+        margin-right: 130px;
+    }
+
+    ._name,
+    .registration__input {
+        margin-top: 20px;
+    }
+
+    .sex {
+        margin: 33px auto;
+
+        span {
+            margin-right: 20px;
+        }
+    }
+
+    ._name,
+    .registration__input {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        width: 359px;
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .form__text {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        width: 359px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    ._name,
+    .registration__input {
+        border: 1px solid #A4A4A4;
+    }
+
+    .txt_anketa {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    .reg_button {
+        i {
+            padding-left: 20px;
+        }
+
+        margin-top: 39px;
+        margin-bottom: 96px;
+    }
+}
+
+// Условия
+.color_background {
+    background-color: #FFFFFF;
+
+    .registration_punkt {
+        list-style-image: url(images/punkt.png);
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+
+        &_txt,
+        ul {
+            padding-top: 22px;
+
+        }
+
+        p {
+            display: inline-block;
+            width: 652px;
+        }
+
+        li {
+            padding-bottom: 16px;
+            margin-left: 25px;
+            padding-left: 23px;
+        }
+
+    }
+}

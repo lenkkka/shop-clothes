@@ -1,0 +1,151 @@
+// catalog
+
+@import "_vars";
+
+.cat-filter {
+    background-color: #fff;
+
+    .filter_flex {
+        display: flex;
+
+        .filter-relative {
+            display: flex;
+            position: relative;
+        }
+
+        .filter-sign {
+            display: flex;
+            align-items: center;
+
+            p {
+                display: inline-block;
+                height: 20px;
+                padding-right: 11px;
+
+            }
+
+            i {
+                display: inline-block;
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: $pink_color;
+            }
+        }
+
+
+    }
+
+    .select_box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 340px;
+
+        &_cat {
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__cat {
+            padding-top: 50px;
+        }
+    }
+
+    .filter-link_box {
+        padding-top: 20px;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+
+        .filter-link {
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            padding-top: 12px;
+        }
+
+        .filter-link:hover {
+            color: $pink_color;
+
+        }
+    }
+
+    .filter-box {
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+        position: absolute;
+        top: 80px;
+        padding: 20px;
+        display: none;
+        z-index: 1;
+    }
+
+    .filter-heading {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $pink_color;
+        width: 235px;
+        padding: 10px;
+        border-bottom: 1px solid #EBEBEB;
+
+        &_brand {
+            padding-bottom: 18px;
+        }
+    }
+
+}
+
+.filter-relative:hover .filter-box {
+    display: block;
+}
+
+.filter-heading_box {
+    display: flex;
+}
+
+//pagination
+.pagination-box {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.pagination {
+    display: flex;
+    padding: 0;
+    margin: 20px 0 96px;
+    width: 380px;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+
+    i {
+        color: #000000;
+    }
+
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: #9F9F9F;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #ddd;
+    color: $pink_color;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
