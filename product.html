@@ -14,12 +14,12 @@
 </head>
 
 <body>
-
     <header class="for_image">
-        <nav class="menu container">
+        <!-- Меню -->
+        <nav class="menu container-main">
             <div class="right_menu">
-                <a href="#"><img src="images/logo.svg" alt="Logo" class="logo"></a>;
-                <a href="#"><img src="images/lupa.svg" alt="Lupa"></a>;
+                <a href="index.html"><img src="images/logo.svg" alt="Logo" class="logo"></a>;
+                <a href="product.html"><img src="images/lupa.svg" alt="Lupa"></a>;
             </div>
             <div class="left_menu">
                 <div class="gamburger left_mini">
@@ -28,10 +28,10 @@
                         <h2 class="main_heading">MENU</h2>
                         <section class="mega-item">
                             <h3 class="mini-heading">MAN</h3>
-                            <a class="mega-link" href="#">Accessories</a>
-                            <a class="mega-link" href="#">Bags</a>
-                            <a class="mega-link" href="#">Denim</a>
-                            <a class="mega-link" href="#">T-Shirts</a>
+                            <a class="mega-link" href="catalog.html">Accessories</a>
+                            <a class="mega-link" href="catalog.html">Bags</a>
+                            <a class="mega-link" href="catalog.html">Denim</a>
+                            <a class="mega-link" href="catalog.html">T-Shirts</a>
                         </section>
                         <section class="mega-item">
                             <h3 class="mini-heading">WOMAN</h3>
@@ -52,13 +52,14 @@
                         </section>
                     </div>
                 </div>
-                <a href="#"><img src="images/person.svg" alt="Person" class="left_mini"></a>;
-                <a href="#"><img src="images/card.svg" alt="Card" class="left_mini"></a>;
+                <a href="registration.html"><img src="images/person.svg" alt="Person" class="left_mini"></a>;
+                <a href="cart-page.html"><img src="images/card.svg" alt="Card" class="left_mini"></a>;
             </div>
         </nav>
     </header>
-    <section class="product">
-        <section class="pro-top container">
+    <!-- Указатель страницы -->
+    <div class="product">
+        <section class="pro-top container-main">
             <h2 class="pro-heading"><b>NEW ARRIVALS</b></h2>
             <nav class="pro-breadcrumb">
                 <ul class="pro-breadcrumb_words">
@@ -68,12 +69,49 @@
                 </ul>
             </nav>
         </section>
-    </section>
-    <div class="pro-card">
-        <div class="product_card container"><img src="images/product_woman.png" alt="Person"></div>
     </div>
+    <!-- Заготовка слайдер -->
+    <div class="all pro-card">
+        <!-- <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-left"></i></a>
+        <div class="product_card container-main"><img src="images/product_woman.png" alt="Person"></div>
+        <a href="#" class="icon_arrow"><i class="fa-solid fa-angle-right"></i></a> -->
+        <input checked type="radio" name="respond" id="desktop">
+        <article id="slider">
+            <input checked type="radio" name="slider" id="switch1">
+            <input type="radio" name="slider" id="switch2">
+            <input type="radio" name="slider" id="switch3">
+            <input type="radio" name="slider" id="switch4">
+            <input type="radio" name="slider" id="switch5">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="image">
+                        <article><img class="photo-slider" src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                        <article><img src="images/product_woman.png"></article>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+            </div>
+            <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+            </div>
+        </article>
+    </div>
+    <!-- Описание товара -->
     <div class="product_box">
-        <div class="product_about container">
+        <div class="product_about container-main">
             <p class="product_heading">WOMEN COLLECTION</p>
             <p class='pink_line'></p><br>
             <p class="product_inf inf_main">MOSCHINO CHEAP AND CHIC</p>
@@ -82,7 +120,7 @@
                 parallel core competencies rather than exceptional portals.</p>
             <p class="price pink product_txt">$561</p>
             <div class='gray_line'></div><br>
-            <section class='select_box'>
+            <div class='select_box'>
                 <select id="color">
                     <option disabled selected>CHOOSE COLOR</option>
                     <option>Black</option>
@@ -102,7 +140,7 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-            </section>
+            </div>
             <div class="pro_button">
                 <a href="#" class="i_button">
                     <i class="fa fa-solid fa-cart-shopping"></i>
@@ -111,17 +149,18 @@
             </div>
         </div>
     </div>
+    <!-- Карточки -->
     <div class="pro-items">
-        <div class="items container">
+        <div class="items container-main">
             <!-- item 1 -->
-            <div class="item">
-                <a href="#"><img class="item_img" src="images/item4.png" alt="picture 4">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item4.png" alt="picture 4">
                     <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
                         cool
                         Kym Ellery teams
                         up with Moda Operandi.</p>
-                    <p class="i_prise item_txt"><b>$52.00</b>
+                    <p class="i_prise itemm_txt"><b>$52.00</b>
                     </p>
                 </a>
                 <div class="add-box">
@@ -132,14 +171,14 @@
                 </div>
             </div>
             <!-- item 2 -->
-            <div class="item">
-                <a href="#"><img class="item_img" src="images/item3.png" alt="picture5">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item3.png" alt="picture5">
                     <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
                         cool
                         Kym Ellery teams
                         up with Moda Operandi.</p>
-                    <p class="i_prise item_txt"><b>$52.00</b>
+                    <p class="i_prise itemm_txt"><b>$52.00</b>
                     </p>
                 </a>
                 <div class="add-box">
@@ -150,14 +189,14 @@
                 </div>
             </div>
             <!-- item 3 -->
-            <div class="item">
-                <a href="#"><img class="item_img" src="images/item6.png" alt="picture 6">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item6.png" alt="picture 6">
                     <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                    <p class="item_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
                         cool
                         Kym Ellery teams
                         up with Moda Operandi.</p>
-                    <p class="i_prise item_txt"><b>$52.00</b>
+                    <p class="i_prise itemm_txt"><b>$52.00</b>
                     </p>
                 </a>
                 <div class="add-box">
@@ -169,9 +208,9 @@
             </div>
         </div>
     </div>
-
+    <!-- Подвал сайта -->
     <div class="for_image_4">
-        <section class="form container">
+        <div class="form container-main">
             <figure class="subscribe_part part1">
                 <img class="subscribe__img" src="images/krug_woman.png" alt="face">
                 <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
@@ -181,24 +220,26 @@
                 <span class="subscribe_text"><b>SUBSCRIBE</b></span><br>
                 <span class="subscribe_text">FOR OUR NEW LETTER AND PROMOTION</span>
                 <div class="subscribe__input">
-                    <input type="email" placeholder="Enter Your Email" class="email">
-                    <button class="button"> Subscribe </button>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email" class="email">
+                        <button type="submit" class="button"> Subscribe </button>
+                    </form>
                 </div>
             </form>
-        </section>
+        </div>
     </div>
-
+    <!-- Иконки -->
     <div class="for_image_5">
-        <footer class="footer container">
+        <footer class="footer container-main">
             <div class="footer__text">© 2021 Brand All Rights Reserved</div>
+
             <div class="icons">
                 <a href="#" class="icon"><i class="fa fa-brands fa-facebook-f"></i></a>
                 <a href="#" class="icon"><i class="fa fa-brands fa-instagram"></i></a>
                 <a href="#" class="icon"><i class="fa fa-brands fa-pinterest-p"></i></a>
                 <a href="#" class="icon"><i class="fa fa-brands fa-twitter"></i></a>
             </div>
-    </div>
-    </footer>
+        </footer>
     </div>
 </body>
 

@@ -1,0 +1,88 @@
+.for_image {
+  background-image: url(images/1_fon.png);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.menu .logo {
+  margin-right: 42px;
+}
+
+.menu .gamburger {
+  padding-top: 3px;
+}
+
+.menu .left_mini {
+  padding-left: 20px;
+}
+
+.menu .left_menu {
+  position: relative;
+  display: flex;
+}
+
+.menu .mega-box {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #6F6E6E;
+  position: absolute;
+  top: 45px;
+  left: -40px;
+  padding: 20px;
+  display: none;
+  z-index: 1;
+}
+
+.menu .mega-box::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: -6px;
+  left: 69px;
+  transform: rotate(45deg);
+  border-left: 1px solid #6F6E6E;
+  border-top: 1px solid #6F6E6E;
+}
+
+.menu .main_heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.menu .mini-heading {
+  width: 235px;
+  padding: 12px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  border-bottom: 1px solid #6F6E6E;
+}
+
+.menu .mega-link {
+  display: block;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.menu .mega-link:hover {
+  color: #F16D7F;
+}
+
+.menu .gamburger:hover .mega-box {
+  display: block;
+}

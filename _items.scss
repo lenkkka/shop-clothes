@@ -1,32 +1,32 @@
+// Карточки товаров
 .items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
-
-    .i_button {
-        display: inline-block;
-        text-align: center;
-        justify-content: center;
-        background: #F16D7F;
-        border: 1px solid transparent;
-        padding: 15px 40px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 17px;
-        color: #FFFFFF;
-    }
-
-    .i_button:hover {
-        background: #FFFFFF;
-        color: #F16D7F;
-        border: 1px solid #F16D7F;
-    }
-
 }
 
-.item {
+.i_button {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background: #F16D7F;
+    border: 1px solid transparent;
+    padding: 15px 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.i_button:hover {
+    background: #FFFFFF;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
+}
+
+
+
+.itemm {
     width: 360px;
     position: relative;
     margin-bottom: 30px;
@@ -41,6 +41,10 @@
 
     &:hover .add-box {
         display: flex;
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 
 
@@ -93,25 +97,24 @@
     justify-content: center;
     width: 100%;
     pointer-events: none;
+}
 
+.add {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #fff;
+    pointer-events: all;
+}
 
-    .add {
-        display: flex;
-        align-items: center;
-        padding: 8px;
-        border: 1px solid #fff;
-        pointer-events: all;
-    }
+.add:hover {
+    box-shadow: 0 0 10px #fff;
+}
 
-    .add:hover {
-        box-shadow: 0 0 10px #fff;
-    }
-
-    .add_txt {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
-        margin-left: 8px;
-    }
+.add_txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 8px;
 }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternetS</title>
+    <link rel="stylesheet" href="style_1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9776d5b505.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="for_image">
+        <!-- Меню -->
+        <nav class="menu container-main">
+            <div class="right_menu">
+                <a href="index.html"><img src="images/logo.svg" alt="Logo" class="logo"></a>;
+                <a href="product.html"><img src="images/lupa.svg" alt="Lupa"></a>;
+            </div>
+            <div class="left_menu">
+                <div class="gamburger left_mini">
+                    <a href="#"><img src="images/menu.svg" alt="Gamburger"></a>;
+                    <div class="mega-box">
+                        <h2 class="main_heading">MENU</h2>
+                        <section class="mega-item">
+                            <h3 class="mini-heading">MAN</h3>
+                            <a class="mega-link" href="catalog.html">Accessories</a>
+                            <a class="mega-link" href="catalog.html">Bags</a>
+                            <a class="mega-link" href="catalog.html">Denim</a>
+                            <a class="mega-link" href="catalog.html">T-Shirts</a>
+                        </section>
+                        <section class="mega-item">
+                            <h3 class="mini-heading">WOMAN</h3>
+                            <a class="mega-link" href="#">Accessories</a>
+                            <a class="mega-link" href="#">Bags</a>
+                            <a class="mega-link" href="#">Denim</a>
+                            <a class="mega-link" href="#">T-Shirts</a>
+                            <a class="mega-link" href="#">Accessories</a>
+                        </section>
+                        <section class="mega-item">
+                            <h3 class="mini-heading">KIDS</h3>
+                            <a class="mega-link" href="#">Accessories</a>
+                            <a class="mega-link" href="#">Bags</a>
+                            <a class="mega-link" href="#">Denim</a>
+                            <a class="mega-link" href="#">T-Shirts</a>
+                            <a class="mega-link" href="#">Accessories</a>
+                            <a class="mega-link" href="#">Bags</a>
+                        </section>
+                    </div>
+                </div>
+                <a href="registration.html"><img src="images/person.svg" alt="Person" class="left_mini"></a>;
+                <a href="cart-page.html"><img src="images/card.svg" alt="Card" class="left_mini"></a>;
+            </div>
+        </nav>
+    </header>
+    <!-- Основная часть -->
+    <div class="product">
+        <section class="pro-top container-main">
+            <h2 class="pro-heading"><b>SHOPPING CART</b></h2>
+        </section>
+    </div>
+    <div class="color_background">
+        <div class="anketa container-main">
+            <div class="registration_punkt">
+                <!-- Карточка первая -->
+                <div class="itemm_cart">
+                    <img class="itemm_img" src="images/item3.png" alt="picture">
+                    <div class="itemm-descripton">
+                        <h3><b>MANGO PEOPLE T-SHIRT</b></h3>
+                        <p>Price: <span>$300</span></p>
+                        <p>Color: Red</p>
+                        <p>Size: Xl</p>
+                        <p>Quantity:<input type="number" step="1" min="1" placeholder=" " class="quantity"></p>
+                    </div>
+                    <i class="fa fa-solid fa-xmark"></i>
+                </div>
+                <!-- Карточка вторая -->
+                <div class="itemm_cart itemm_cart__second ">
+                    <img class="itemm_img" src="images/item7.png" alt="picture">
+                    <div class="itemm-descripton">
+                        <h3><b>MANGO PEOPLE T-SHIRT</b></h3>
+                        <p>Price: <span>$300</span></p>
+                        <p>Color: Red</p>
+                        <p>Size: Xl</p>
+                        <p>Quantity:<input type="number" step="1" min="1" placeholder=" " class="quantity"></p>
+                    </div>
+                    <i class="fa fa-solid fa-xmark"></i>
+                </div>
+                <!-- Кнопка первая -->
+                <a href="#">
+                    <button class="cart_button">CLEAR SHOPPING CART</button>
+                </a>
+                <!-- Кнопка вторая -->
+                <a href="#">
+                    <button class="cart_button cart_button__second">CONTINUE SHOPPING
+                    </button>
+                </a>
+            </div>
+            <!-- Анкета для покупки -->
+            <form action="#">
+                <div>
+                    <h3 class="txt_anketa">SHIPPING ADRESS</h3>
+                    <input type="text" placeholder="Bangladesh" class="_name"><br>
+                    <input type="text" placeholder="State" class="_name"><br>
+                    <input type="text" placeholder="Postcode / Zip" class="_name"><br>
+                </div>
+                <a href="#">
+                    <button type="submit" class="cart_button">GET A QUOTE
+                    </button>
+                </a>
+
+                <div class="cartsum">
+                    <h3 class="cartsum_txt">SUB TOTAL <span>$900</span></h3>
+                    <p class="cartsum_grandtxt">GRAND TOTAL <span>$900</span></p>
+                    <div class="cartsum_gray_line"></div>
+                    <a href="#">
+                        <button class="cartsum_button">PROCEED TO CHECKOUT
+                        </button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Подвал сайта -->
+    <div class="for_image_4">
+        <div class="form container-main">
+            <figure class="subscribe_part part1">
+                <img class="subscribe__img" src="images/krug_woman.png" alt="face">
+                <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar
+                        purus
+                        condimentum</i>“</p>
+            </figure>
+            <form class="subscribe_part part2">
+                <span class="subscribe_text"><b>SUBSCRIBE</b></span><br>
+                <span class="subscribe_text">FOR OUR NEW LETTER AND PROMOTION</span>
+                <div class="subscribe__input">
+                    <form>
+                        <input type="email" placeholder="Enter Your Email" class="email">
+                        <button type="submit" class="button"> Subscribe </button>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Иконки -->
+    <div class="for_image_5">
+        <footer class="footer container-main">
+            <div class="footer__text">© 2021 Brand All Rights Reserved</div>
+
+            <div class="icons">
+                <a href="#" class="icon"><i class="fa fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fa fa-brands fa-pinterest-p"></i></a>
+                <a href="#" class="icon"><i class="fa fa-brands fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
