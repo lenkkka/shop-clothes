@@ -1217,6 +1217,180 @@ select {
   border: 1px solid #F16D7F;
 }
 
+.cat-filter {
+  background-color: #fff;
+}
+
+.cat-filter .filter_flex {
+  display: flex;
+}
+
+.cat-filter .filter_flex .filter-relative {
+  display: flex;
+  position: relative;
+}
+
+.cat-filter .filter_flex .filter-sign {
+  display: flex;
+  align-items: center;
+}
+
+.cat-filter .filter_flex .filter-sign p {
+  display: inline-block;
+  height: 20px;
+  padding-right: 11px;
+}
+
+.cat-filter .filter_flex .filter-sign i {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.cat-filter .filter_flex .filter-sign:hover {
+  color: #F16D7F;
+}
+
+.cat-filter .select_box {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 340px;
+}
+
+.cat-filter .select_box_cat {
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-filter .select_box__cat {
+  padding-top: 50px;
+}
+
+.cat-filter .filter-link_box {
+  padding-top: 20px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.cat-filter .filter-link_box .filter-link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-top: 12px;
+}
+
+.cat-filter .filter-link_box .filter-link:hover {
+  color: #F16D7F;
+}
+
+.cat-filter .filter-box {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: 80px;
+  padding: 20px;
+  display: none;
+  z-index: 1;
+}
+
+.cat-filter .filter-heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  width: 235px;
+  padding: 10px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.cat-filter .filter-heading_brand {
+  padding-bottom: 18px;
+}
+
+.cat-filter .filter-heading:hover .filter-link_box {
+  display: block;
+}
+
+.cat-filter .filter-heading:hover {
+  color: #F16D7F;
+  font-weight: 500;
+}
+
+.filter-relative:hover .filter-box {
+  display: block;
+}
+
+.filter-heading_box {
+  display: flex;
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion__content {
+  display: none;
+}
+
+.accordion input:checked ~ .accordion__content {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.accordion__header:hover {
+  color: #F16D7F;
+  font-weight: 500;
+}
+
+.pagination-box {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 20px 0 96px;
+  width: 380px;
+  padding: 10px;
+  text-align: center;
+  align-self: center;
+}
+
+.pagination i {
+  color: #000000;
+}
+
+ul.pagination li {
+  display: inline;
+}
+
+ul.pagination li a {
+  color: #9F9F9F;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.pagination li a.active {
+  background-color: #ddd;
+  color: #F16D7F;
+}
+
+ul.pagination li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
 .for_image_2 {
   background: #F1E4E6;
 }
