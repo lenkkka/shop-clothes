@@ -56,8 +56,8 @@
     .filter-link_box {
         padding-top: 20px;
         margin-bottom: 24px;
-        display: flex;
-        flex-direction: column;
+        //     display: flex;
+        //     flex-direction: column;
         font-weight: 400;
 
         .filter-link {
@@ -96,6 +96,15 @@
         &_brand {
             padding-bottom: 18px;
         }
+
+        &:hover .filter-link_box {
+            display: block;
+        }
+
+        &:hover {
+            color: $pink_color;
+            font-weight: 500;
+        }
     }
 
 }
@@ -107,6 +116,33 @@
 .filter-heading_box {
     display: flex;
 }
+
+.accordion input {
+    display: none;
+}
+
+.accordion__content {
+    display: none;
+}
+
+.accordion input:checked~.accordion__content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion__header {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.accordion__header:hover {
+    color: $pink_color;
+    font-weight: 500;
+}
+
 
 //pagination
 .pagination-box {

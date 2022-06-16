@@ -50,8 +50,6 @@
 .cat-filter .filter-link_box {
   padding-top: 20px;
   margin-bottom: 24px;
-  display: flex;
-  flex-direction: column;
   font-weight: 400;
 }
 
@@ -91,12 +89,47 @@
   padding-bottom: 18px;
 }
 
+.cat-filter .filter-heading:hover .filter-link_box {
+  display: block;
+}
+
+.cat-filter .filter-heading:hover {
+  color: #F16D7F;
+  font-weight: 500;
+}
+
 .filter-relative:hover .filter-box {
   display: block;
 }
 
 .filter-heading_box {
   display: flex;
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion__content {
+  display: none;
+}
+
+.accordion input:checked ~ .accordion__content {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.accordion__header:hover {
+  color: #F16D7F;
+  font-weight: 500;
 }
 
 .pagination-box {
