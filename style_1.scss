@@ -9,6 +9,11 @@
     }
 }
 
+html,
+body {
+    height: 100%;
+}
+
 @import "_vars";
 
 .container-main {
