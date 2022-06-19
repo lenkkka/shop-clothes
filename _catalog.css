@@ -171,3 +171,71 @@ ul.pagination li a.active {
 ul.pagination li a:hover:not(.active) {
   background-color: #ddd;
 }
+
+@media (min-width: 375px) and (max-width: 1024px) {
+  .container-main {
+    width: 74%;
+    margin: 0 auto;
+  }
+  #hide {
+    display: none;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .form .part1 {
+    width: 300px;
+    align-self: center;
+    padding-bottom: 40px;
+  }
+  .form .part2 {
+    padding-right: 0;
+  }
+  .select_box {
+    width: 100%;
+    padding-left: 378px;
+  }
+}
+
+@media (max-width: 376px) {
+  .container-main {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #hide {
+    display: none;
+  }
+  .pro-top {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-top: 10px;
+  }
+  .pro-top h2 {
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+  .cat-filter .select_box {
+    padding-left: 5px;
+  }
+  .select_box select {
+    margin-right: 0;
+  }
+  .form .email {
+    width: 200px;
+    width-width: 200px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .icons,
+  .footer__text {
+    align-self: center;
+  }
+  .footer__text {
+    padding-bottom: 20px;
+  }
+}
