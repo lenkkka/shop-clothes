@@ -9,6 +9,11 @@
     }
 }
 
+html,
+body {
+    height: 100%;
+}
+
 @import "_vars";
 
 .container-main {
@@ -96,6 +101,10 @@
 
 .categoria {
     position: relative;
+}
+
+.categoria__img {
+    display: inline-block;
 }
 
 .categoria__text {
