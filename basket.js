@@ -42,12 +42,13 @@ function addToCart(id, name, price) {
 }
 
 function getTotalBasketCount() {
-    return Object.values(basket).reduce((acc, product) => acc + product.count, 0);
+    return Object.values(basket)
+        .reduce((acc, product) => acc + product.count, 0);
 }
 
 function getTotalBasketPrice() {
     return Object.values(basket)
-        .reduce((acc, product) => acc + product.count * product.price, 0)
+        .reduce((acc, product) => acc + product.count * product.price, 0);
 }
 
 function renderProductInBasket(id) {
@@ -58,8 +59,10 @@ function renderProductInBasket(id) {
         return;
     }
 
-    basketRowEl.querySelector('.productCount').textContent = basket[id].count;
-    basketRowEl.querySelector('.productTotalRow').textContent = basket[id].count * basket[id].price;
+    basketRowEl.querySelector('.productCount')
+        .textContent = Math.round(basket[id].count);
+    basketRowEl.querySelector('.productTotalRow')
+        .textContent = Math.round(basket[id].count * basket[id].price);
 }
 
 
@@ -77,6 +80,5 @@ function renderNewProductInBasket(productId) {
     $<span class='productTotalRow'>${(basket[productId].price * basket[productId].count)}</span>
     </div>
     `;
-    basketTotalEl.insertAdjacentHTML('beforebegin', productRow)
-
+    basketTotalEl.insertAdjacentHTML('beforebegin', productRow);
 }
