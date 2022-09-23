@@ -53,7 +53,24 @@
                     </div>
                 </div>
                 <a href="registration.html"><img src="images/person.svg" alt="Person" class="left_mini"></a>;
-                <a href="cart-page.html"><img src="images/card.svg" alt="Card" class="left_mini"></a>;
+                <a href="registration.html" id="hide"><img src="images/person.svg" alt="Person" class="left_mini"></a>
+                <span class="cartIconWrap">
+                    <img src="images/card.svg" alt="Card" class="left_mini">
+                    <span>0</span>
+                </span>
+                <div class="basket hidden">
+                    <div class="basketRow basketHeader">
+                        <div>Название товара</div>
+                        <div>Количество</div>
+                        <div>Цена за шт.</div>
+                        <div>Итого</div>
+                    </div>
+
+                    <div class="basketTotal">
+                        Товаров в корзине на сумму:
+                        $<span class="basketTotalValue">0</span>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -117,110 +134,129 @@
     <!-- Карточки товаров -->
     <section class="items container-main">
         <!-- item 1 -->
-        <div class="itemm">
-            <a href="#"><img class="itemm_img" src="images/item1.png" alt="picture">
-                <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                    Kym Ellery teams
-                    up with Moda Operandi.</p>
-                <p class="i_prise itemm_txt"><b>$52.00</b>
-                </p>
-            </a>
-            <div class="add-box">
-                <a href="#" class="add">
-                    <img src="images/add_box.png" alt="cart">
-                    <p class="add_txt">Add to Cart</p>
+        <div class="featuredItem" data-id="1" data-name="ELLERY X M'O CAPSULE" data-price="52">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item1.png" alt="picture">
+                    <h3><b>ELLERY X M'O CAPSULE</b></h3>
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                        cool
+                        Kym Ellery teams
+                        up with Moda Operandi.</p>
+                    <p class="i_prise itemm_txt"><b>$52.00</b>
+                    </p>
                 </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="images/add_box.png" alt="cart">
+                        <p class="add_txt">Add to Cart</p>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- item 2 -->
-        <div class="itemm">
-            <a href="#"><img class="itemm_img" src="images/item2.png" alt="picture">
-                <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                    Kym Ellery teams
-                    up with Moda Operandi.</p>
-                <p class="i_prise itemm_txt"><b>$52.00</b>
-                </p>
-            </a>
-            <div class="add-box">
-                <a href="#" class="add">
-                    <img src="images/add_box.png" alt="cart">
-                    <p class="add_txt">Add to Cart</p>
+        <div class="featuredItem" data-id="2" data-name="ELLERY X CAPSULE" data-price="40">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item2.png" alt="picture">
+                    <h3><b>ELLERY X CAPSULE</b></h3>
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                        cool
+                        Kym Ellery teams
+                        up with Moda Operandi.</p>
+                    <p class="i_prise itemm_txt"><b>$40.00</b>
+                    </p>
                 </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="images/add_box.png" alt="cart">
+                        <p class="add_txt">Add to Cart</p>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- item 3 -->
-        <div class="itemm">
-            <a href="#"><img class="itemm_img" src="images/item3.png" alt="picture">
-                <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                    Kym Ellery teams
-                    up with Moda Operandi.</p>
-                <p class="i_prise itemm_txt"><b>$52.00</b>
-                </p>
-            </a>
-            <div class="add-box">
-                <a href="#" class="add">
-                    <img src="images/add_box.png" alt="cart">
-                    <p class="add_txt">Add to Cart</p>
+        <div class="featuredItem" data-id="3" data-name="X M'O CAPSULE" data-price="85">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item3.png" alt="picture">
+                    <h3><b>X M'O CAPSULE</b></h3>
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                        cool
+                        Kym Ellery teams
+                        up with Moda Operandi.</p>
+                    <p class="i_prise itemm_txt"><b>$85.00</b>
+                    </p>
                 </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="images/add_box.png" alt="cart">
+                        <p class="add_txt">Add to Cart</p>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- item 4 -->
-        <div class="itemm">
-            <a href="#"><img class="itemm_img" src="images/item4.png" alt="picture 4">
-                <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                    Kym Ellery teams
-                    up with Moda Operandi.</p>
-                <p class="i_prise itemm_txt"><b>$52.00</b>
-                </p>
-            </a>
-            <div class="add-box">
-                <a href="#" class="add">
-                    <img src="images/add_box.png" alt="cart">
-                    <p class="add_txt">Add to Cart</p>
+        <div class="featuredItem" data-id="4" data-name="CAPSULE" data-price="68">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item4.png" alt="picture 4">
+                    <h3><b>CAPSULE</b></h3>
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                        cool
+                        Kym Ellery teams
+                        up with Moda Operandi.</p>
+                    <p class="i_prise itemm_txt"><b>$68.00</b>
+                    </p>
                 </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="images/add_box.png" alt="cart">
+                        <p class="add_txt">Add to Cart</p>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- item 5 -->
-        <div class="itemm">
-            <a href="#"><img class="itemm_img" src="images/item5.png" alt="picture5">
-                <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                    Kym Ellery teams
-                    up with Moda Operandi.</p>
-                <p class="i_prise itemm_txt"><b>$52.00</b>
-                </p>
-            </a>
-            <div class="add-box">
-                <a href="#" class="add">
-                    <img src="images/add_box.png" alt="cart">
-                    <p class="add_txt">Add to Cart</p>
+        <div class="featuredItem" data-id="5" data-name="ELLER" data-price="45">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item5.png" alt="picture5">
+                    <h3><b>ELLER</b></h3>
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                        cool
+                        Kym Ellery teams
+                        up with Moda Operandi.</p>
+                    <p class="i_prise itemm_txt"><b>$45.00</b>
+                    </p>
                 </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="images/add_box.png" alt="cart">
+                        <p class="add_txt">Add to Cart</p>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- item 6 -->
-        <div class="itemm">
-            <a href="#"><img class="itemm_img" src="images/item6.png" alt="picture 6">
-                <h3><b>ELLERY X M'O CAPSULE</b></h3>
-                <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
-                    Kym Ellery teams
-                    up with Moda Operandi.</p>
-                <p class="i_prise itemm_txt"><b>$52.00</b>
-                </p>
-            </a>
-            <div class="add-box">
-                <a href="#" class="add">
-                    <img src="images/add_box.png" alt="cart">
-                    <p class="add_txt">Add to Cart</p>
+        <div class="featuredItem" data-id="6" data-name="O CAPSULE" data-price="86">
+            <div class="itemm">
+                <a href="#"><img class="itemm_img" src="images/item6.png" alt="picture 6">
+                    <h3><b>O CAPSULE</b></h3>
+                    <p class="itemm_txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of
+                        cool
+                        Kym Ellery teams
+                        up with Moda Operandi.</p>
+                    <p class="i_prise itemm_txt"><b>$86.00</b>
+                    </p>
                 </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="images/add_box.png" alt="cart">
+                        <p class="add_txt">Add to Cart</p>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="itemm_button">
             <a href="product.html" class="i_button rotate">Browse All Product</a>
         </div>
+
     </section>
     <!-- Скидки и доставка -->
     <div class="for_image_3">
@@ -287,6 +323,7 @@
             </div>
         </footer>
     </div>
+    <script src="basket.js"></script>
 </body>
 
 </html>
